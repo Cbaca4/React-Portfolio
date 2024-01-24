@@ -81,6 +81,23 @@ return (
                                 Name must be more than 5 characters
                             </div>
                         )}
+                        </Form.Group>
+                    <Form.Group>
+                        <Form.Label htmlFor="email">Email:</Form.Label>
+                        <Form.Control
+                        type="email"
+                        className={emailError ? "is-invalid" : ""}
+                        id="email"
+                        name="email"
+                        value={email}
+                        onChange={handleEmailChange}
+                        required
+                        />
+                        {emailError && (
+                            <div className="invalid-feedback">
+                                A valid email is required
+                            </div>
+                        )}
                     </Form.Group>
                     <Form.Group>
                         <Form.Label htmlFor="message">Message:</Form.Label>

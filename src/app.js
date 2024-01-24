@@ -5,7 +5,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
-import Footer from './components/ Footer';
+import Footer from './components/Footer';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import "./style/App.css";
@@ -17,11 +17,11 @@ function App() {
                 <Header/>
                     <div className="container mt-5">
                         <Routes>
-                            <Route path="/React-Portfolio/" element={About />} />
-                            <Route path="/React-Portfolio/about" element={About />} />
-                            <Route path="/React-Portfoliopo/portfolio" element={Portfolio />} />
-                            <Route path="/React-Portfolio/contact" element={Contact />} />
-                            <Route path="/React-Portfolio/resume" element={Resume />} />
+                            <Route path="/React-Portfolio/" element={About} />
+                            <Route path="/React-Portfolio/about" element={About} />
+                            <Route path="/React-Portfoliopo/portfolio" element={Portfolio} />
+                            <Route path="/React-Portfolio/contact" element={Contact} />
+                            <Route path="/React-Portfolio/resume" element={Resume} />
                         </Routes>
                     </div>
                     <Footer />
